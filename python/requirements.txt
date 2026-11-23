@@ -1,0 +1,7 @@
+ultralytics
+torch
+torchvision
+opencv-python
+imageio-ffmpeg
+torchmetrics
+faster-coco-eval

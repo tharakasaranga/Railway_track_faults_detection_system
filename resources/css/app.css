@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+html[data-bs-theme='dark'] body {
+    background-color: #111827;
+}
+
+html[data-bs-theme='dark'] main {
+    color: #e5e7eb;
+    background-color: #111827;
+}
+
+html[data-bs-theme='dark'] main .navbar {
+    color: #e5e7eb;
+    background-color: #1f2937;
+}
+
+html[data-bs-theme='dark'] main .navbar-brand,
+html[data-bs-theme='dark'] main .text-dark {
+    color: #f3f4f6 !important;
+}
+
+html[data-bs-theme='dark'] main .bg-light,
+html[data-bs-theme='dark'] main .bg-white {
+    color: #e5e7eb !important;
+    background-color: #1f2937 !important;
+}
+
+html[data-bs-theme='dark'] main .border,
+html[data-bs-theme='dark'] main .border-bottom,
+html[data-bs-theme='dark'] main hr {
+    border-color: #374151 !important;
+}
